@@ -1,0 +1,427 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            font-family: sans-serif;
+            box-sizing: border-box;
+           padding: 0;
+           margin: 0;
+            
+        }
+        body{
+          
+          
+            background-color: rgb(255, 255, 255);
+        }
+        .main{
+            background-image: url(images/banner.png);
+            background-size: 100% 100%;
+            height: 100vh;
+            filter: brightness(80%);
+        }
+         nav{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+          
+         }
+        button{
+            height: 5vh;
+            width: 8vw;
+            border: none;
+            background-color: rgb(255, 255, 255);
+            border-radius: 20px;
+        }
+        li{
+            list-style: none;
+           
+        }
+        a{ text-decoration: none;
+            color: white;}
+        .menu-icon{
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            display: none;}
+     @media (max-width:675px) {
+            ul{
+                position: absolute;
+                top: 48px;
+                left: 0;
+                right: 0;
+                height: 80vh;
+                flex-direction: column;
+                text-align: center;
+                background-color: #000101f5;
+                overflow: hidden;
+            }
+          
+            .menu-icon{
+                display: block;
+            }
+            
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 65px;
+            margin-top: 40px;
+          
+           
+        }
+        #menuList{
+            transition: all 0.5s;
+        }
+        .nn{
+            border-block-end:2px solid rgb(251, 251, 253);
+        }
+        .context{
+            position:relative;
+            display: flex;
+            margin-left: 22%;
+            margin-top: 30%;
+            border: 2px solid  white;
+            height: 25vh;
+            background-color: aliceblue;
+            width: 55vw;
+            border-radius: 90px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .h1{
+           position: absolute;
+            display: flex;
+            color: white;
+            font-size: large;
+            flex-wrap: wrap;
+            margin-left: 38%;
+            margin-top: 25%;
+
+        }
+        @media (max-width:675px) {
+            .context{
+            display:flex;
+            flex-direction: column;
+            border: 2px solid  white;
+            height: 40vh;
+            width: 50vw;
+            border-radius: 15px;
+            margin-left: 25%;
+            margin-top:22rem;
+            justify-content: center;
+           
+            }
+        }
+        @media (max-width:1000px) {
+            .h1{
+                
+            display: none;
+            
+            }
+        }
+        input{
+            outline: none;
+            border: none;
+            background-color: aliceblue;
+          
+        }
+        .sepration{
+    height: 1px;
+    width: 95vw;
+    margin-top: 100px;
+    background-color: rgba(53, 52, 54, 0.965);
+}
+
+ .Eeclusives{
+    display: flex;
+    height: auto;
+    width: 95vw;
+   margin-left: 30px;
+   margin-top: 12px;
+ }
+ .grid-card{
+            display: grid;
+            gap: 15px;
+            justify-content: center;
+            margin-left: 40px;
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+ }
+ .card1{
+    background-image: url(images/image-1.png);
+    height: 20vh;
+    width: auto;
+    border-radius:10px;
+ }
+ .card2{
+    background-image: url(images/image-2.png);
+    height: 20vh;
+    width: auto;
+    border-radius:10px;
+ }
+ .card3{
+    background-image: url(images/image-3.png);
+    height: 20vh;
+    width: auto;
+    border-radius:10px;
+ }
+ .card4{
+    background-image: url(images/image-4.png);
+    height: 20vh;
+    width: auto;
+    border-radius:10px;
+ }
+ .card5{
+    background-image: url(images/image-5.png);
+    height: 20vh;
+    width: auto;
+    border-radius:10px;
+ }
+ .card6{
+    background-image: url(images/image-6.png);
+    height: 20vh;
+    width: auto;
+    border-radius:10px;
+ }
+ .card7{
+    background-image: url(images/image-7.png);
+    height: 20vh;
+    width: auto;
+    border-radius:10px;
+ }
+ .card8{
+    background-image: url(images/image-8.png);
+    height: 20vh;
+    width: auto;
+    border-radius:10px;
+ }
+ .card9{
+    background-image: url(images/image-9.png);
+    height: 20vh;
+    width: auto;
+    border-radius:10px;
+ }
+ .card10{
+    background-image: url(images/image-10.png);
+    height: 20vh;
+    width: auto;
+    border-radius:10px;
+ }
+        img{
+            border-radius:10px;
+        }
+        .Sharing{
+            background-image: url(images/banner-2.png);
+             background-position: center center;
+            background-size: 100% 100%;
+            height: 50vh;
+            width: 80vw;
+            margin-top: 6rem;
+            margin-left: 6rem;
+            position: relative;
+            display: flex;
+            border-radius: 10px;
+        }
+        .Abouts{
+            display: flex;
+            flex-direction: column;
+            font-size: large;
+            align-items: center;
+            height: 50vh;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+     <nav>
+        <ul id="menuList">
+            <li><img height="40" src="images/logo.png" alt=""></li>
+            <li><a href="#" class="nn">Popular Places</a></li>
+            <li><a href="#">Travel Outside</a></li>
+            <li><a href="#">Online Packages</a></li>
+            <button>Register Now</button>
+        </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="ToggleMenu()"></i>
+                
+            </div>
+        
+     </nav>
+   
+     <div class="h1">
+        <h1>Find Your Next Stay</h1>
+     </div>
+      <div class="context">
+         <h4>Location<br><input type="text" placeholder="Where are you going?" style="outline:none;"></h4>
+         <h4>Check In <br><input type="text" placeholder="Add Date"></h4>
+            <h4>Check Out<br><input type="text" placeholder="Add date"></h4>
+            <h4>Guest<br><input type="text" placeholder="Add Guest"></h4>
+            <a><img src="images/search.png" alt="" style=" cursor: pointer; height: 6vh; color: white; background-color: rgb(255, 0, 136); border-radius: 20px;" ></a>
+         
+      </div>
+    </div>
+
+      
+
+      <div class="Eeclusives">
+      <h2>Exclusives</h2>
+    </div>
+      <div class="grid-card" style="margin-top: 23px;">
+        <div class="card1" style="color: antiquewhite; display: flex;flex-direction: column;
+        justify-content: center; align-items: center;">
+            <h3>London</h3>
+             <p>Starts at</p>
+             <p>$250</p>
+            
+        </div>
+        <div class="card2" style="color: antiquewhite; display: flex;flex-direction: column;
+        justify-content: center; align-items: center;">
+        <h3>Switzerland</h3>
+        <p>Starts at</p>
+        <p>$250</p>
+            
+        </div>
+        <div class="card3" style="color: antiquewhite; display: flex;flex-direction: column;
+        justify-content: center; align-items: center;">
+        <h3>Australia</h3>
+        <p>Starts at</p>
+        <p>$250</p>
+           
+        </div>
+        <div class="card4" style="color: antiquewhite; display: flex;flex-direction: column;
+        justify-content: center; align-items: center;">
+        <h3>France</h3>
+        <p>Starts at</p>
+        <p>$250</p>
+            
+        </div>
+        <div class="card5" style="color: antiquewhite; display: flex;flex-direction: column;
+        justify-content: center; align-items: center;">
+        <h3>Amsterdam</h3>
+        <p>Starts at</p>
+        <p>$250</p>
+            
+        </div>
+        <div class="card6" style="color: antiquewhite; display: flex;flex-direction: column;
+        justify-content: center; align-items: center;">
+        <h3>Netherlands</h3>
+        <p>Starts at</p>
+        <p>$250</p>
+            
+        </div>
+        <div class="card7" style="color: antiquewhite; display: flex;flex-direction: column;
+        justify-content: center; align-items: center;">
+        <h3>New York</h3>
+        <p>Starts at</p>
+        <p>$250</p>
+            
+        </div>
+        <div class="card8" style="color: antiquewhite; display: flex;flex-direction: column;
+        justify-content: center; align-items: center;">
+        <h3>Chicago</h3>
+        <p>Starts at</p>
+        <p>$250</p>
+            
+        </div>
+        <div class="card9" style="color: antiquewhite; display: flex;flex-direction: column;
+        justify-content: center; align-items: center;">
+        <h3>San Francisco</h3>
+        <p>Starts at</p>
+        <p>$250</p>
+            
+        </div>
+        <div class="card10" style="color: antiquewhite; display: flex;flex-direction: column;
+        justify-content: center; align-items: center;">
+        <h3>Sanghai</h3>
+        <p>Starts at</p>
+        <p>$250</p>
+          
+        </div>
+      </div>
+
+      
+
+   <div class="tranding">
+      <h2 style="margin-left: 25px; margin-top: 35px;">Trending Places</h2>
+      <div class="grid-card " style="margin-top: 23px;">
+        <div class="card">
+            <img height="180" src="images/dubai.png" alt="">
+            <h2>Dubai</h2>
+        </div>
+        <div class="card">
+            <img height="180" src="images/new-york.png" alt="">
+            <h2>New York</h2>
+        </div>
+        <div class="card">
+            <img height="180" src="images/paris.png" alt="">
+            <h2>Paris</h2>
+        </div>
+        <div class="card">
+            <img height="180" src="images/new-delhi.png" alt="">
+            <h2>New Delhi</h2>
+        </div>     
+      </div>
+
+      <div class="Sharing">
+        <div class="data" style="box-sizing: border-box; display: flex; flex-direction: column;margin: 80px; color: white;">
+         <h1>Sharing</h1>
+         <h1>Is Earning Now</h1>
+         <h3 style="margin-top: 15px;">Great Opporitunity to make money by</h3>
+         <h3>Sharing your extra space</h3>
+         <button type="summit" style="margin-top: 30px; background-color: rgb(255, 0, 76);color: white; border-radius: 10px;"><a href="Home.html"> Know More</a></button>
+      </div>
+    </div>
+   </div>  
+   <div class="grid-card" style="margin-top: 50px;">
+    <div class="card">
+        <img height="300" src="images/story-1.png" alt="">
+        
+    </div>
+    <div class="card">
+        <img height="300" src="images/story-2.png" alt="">
+        
+    </div>
+    <div class="card">
+        <img height="300" src="images/story-3.png" alt=""> 
+    </div>  
+   </div>
+    <div class="bt" style="display: flex; justify-content: center;align-items: center;">
+        <button style="box-sizing: content-box; margin-top: 30px; background-color: rgb(255, 0, 128); height: 6vh;width: 18vw;color: white;" type="summit">Start Making Money</button>
+    </div>
+  
+<div class="Abouts">
+    <h2 style="margin-top: 50px;">About StayBNB</h2>
+    <span style="margin-top: 50px; overflow: auto; width: 50vw; height: 50vh; align-items: center; justify-content: center;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo in omnis sit? Fugit laborum, nam quis aperiam est praesentium laboriosam corrupti reiciendis pariatur vero tempore officiis eos voluptas culpa odio voluptate. Et totam explicabo dolorum perferendis eveniet assumenda earum a! Nobis sapiente illum eaque veniam incidunt suscipit accusamus adipisci excepturi eius corporis cumque impedit laudantium harum accusantium unde, aliquid architecto error repudiandae doloribus debitis cupiditate. Molestias repudiandae repellat quod esse autem cupiditate facilis non totam?</span>
+</div>
+<div class="sepration"></div>
+      <div class="copy" style="display: flex; justify-content: center;">
+        <span>Copyright@ 2024, travelWebsite-Umesh Kumar</span>
+      </div>
+      <!-- javascript code -->
+     <script>
+        let menuList=document.getElementById("menuList")
+        menuList.style.maxHeight="0px";
+ 
+        function ToggleMenu(){
+         if(menuList.style.maxHeight=="0px")
+        {
+         menuList.style.maxHeight="300px";
+        }
+        else
+        {
+         menuList.style.maxHeight="0px";
+        }
+     }
+ 
+     </script>
+
+   
+</body>
+</html>
